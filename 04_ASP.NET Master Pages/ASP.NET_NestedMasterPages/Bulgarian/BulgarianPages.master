@@ -1,0 +1,14 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="BulgarianPages.master.cs" Inherits="ASP.NET_NestedMasterPages.Bulgarian.NestedMasterPage1" %>
+
+
+<asp:Content ContentPlaceHolderID="MainContent" runat="server">
+    
+    <asp:ContentPlaceHolder ID="AboutTheCompanyContentPlaceHolder" runat="server">
+        
+    </asp:ContentPlaceHolder>
+
+    <asp:ContentPlaceHolder ID="Contacts" runat="server">
+
+    </asp:ContentPlaceHolder>
+
+</asp:Content>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NET Master Pages", "ASP.NET Master Pages\ASP.NET Master Pages.csproj", "{586CDB91-0CA3-4B01-8861-064C9B7EDF4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NET_NestedMasterPages", "ASP.NET_NestedMasterPages\ASP.NET_NestedMasterPages.csproj", "{78831739-CC35-493D-8BD4-AE10D24CAB9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{586CDB91-0CA3-4B01-8861-064C9B7EDF4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{586CDB91-0CA3-4B01-8861-064C9B7EDF4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{586CDB91-0CA3-4B01-8861-064C9B7EDF4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{586CDB91-0CA3-4B01-8861-064C9B7EDF4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78831739-CC35-493D-8BD4-AE10D24CAB9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78831739-CC35-493D-8BD4-AE10D24CAB9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78831739-CC35-493D-8BD4-AE10D24CAB9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78831739-CC35-493D-8BD4-AE10D24CAB9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="ASP.NET_Master_Pages.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title><%: Page.Title %> - ASP.NET Master Pages Homework</title>
+
+        <asp:PlaceHolder runat="server">
+            <%: Scripts.Render("~/bundles/modernizr") %>
+        </asp:PlaceHolder>
+
+        <webopt:bundlereference runat="server" path="~/Content/css" />
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+    <form runat="server">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolderBundles" runat="server">
+
+        </asp:ContentPlaceHolder>
+
+        <%--Top Navigation Bar--%>
+        <div class="navbar navbar-fixed-top navbar-inverse" id="top-navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" runat="server" href="~/">ASP.NET Master Pages Homework</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a runat="server" href="~/">Home</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a runat="server" href="~/More">Learn More</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <%--Aside Left Navigation--%>
+        <div class="row" style="width:100%">
+            <div class="col-lg-3 col-md-3 col-sm-4">
+                <div class="container-fluid" id="nav-left">
+                    <div class="list-group table-of-contents">
+                      <a runat="server" class="list-group-item" href="~/">Home</a>
+                      <a runat="server" class="list-group-item" href="~/Info">Personal Info</a>
+                      <a runat="server" class="list-group-item" href="~/Friends">Friends</a>
+                      <a runat="server" class="list-group-item" href="~/More">Additional Info</a>
+                      <a runat="server" class="list-group-item" href="~/">Links</a>
+                      <a runat="server" class="list-group-item" href="~/">Other Stuff :)</a>
+                    </div>
+                </div>
+            </div>
+
+            <%--Main Content--%>
+            <div class="col-lg-9 col-md-9 col-sm-8">
+                <div class="container body-content" style="width:100%">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                
+                    </asp:ContentPlaceHolder>    
+                </div>
+            </div>
+        </div>
+        <hr />
+        <footer>
+            <p>&copy; <%: DateTime.Now.Year %> - ASP.NET Master Pages Homework</p>
+        </footer>
+    </form>
+</body>
+</html>

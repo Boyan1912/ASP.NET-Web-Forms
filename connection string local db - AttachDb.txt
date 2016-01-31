@@ -1,0 +1,5 @@
+<connectionStrings>
+    
+	<add name="DefaultConnection" connectionString="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\aspnet-YouTubePlaylistSystem-20160127101649.mdf;Initial Catalog=YouTubePlaylistSystemDb;Integrated Security=True;" providerName="System.Data.SqlClient" />
+  
+</connectionStrings>
